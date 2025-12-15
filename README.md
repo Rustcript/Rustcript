@@ -279,7 +279,7 @@ The, `AI_INSTRUCTIONS.md`, is a single-source-of-truth document that teaches an 
 
 ### Features for AI Integration
 *   **System Prompting & Persona:** The file begins with a system prompt that primes the AI to act as a specialist in the `Rustcript` language and its interpreter.
-*   **Deep Architectural Insights:** It goes beyond the public manual, explaining the *internal logic* of the interpreter—how the parser builds an AST, how the `jump_map` optimizes control flow, and how the state machine manages scopes and stacks. This context allows the AI to reason about the code from first principles.
+*   **Deep Architectural Insights:** It goes beyond the public manual, explaining the *internal logic* of the interpreter, how the parser builds an AST, how the `jump_map` optimizes control flow, and how the state machine manages scopes and stacks. This context allows the AI to reason about the code from first principles.
 *   **Formal Grammar & API Reference:** The complete language syntax and standard library are documented in a structured, machine-readable format, minimizing ambiguity.
 *   **Few-Shot Learning Zone:** The document contains a rich set of examples formatted as `Task -> Thought Process -> Correct Code`. This teaches the AI not just *what* the correct code is, but *how* to reason about a problem and arrive at the solution, a technique derived from Chain-of-Thought prompting.
 *   **Anti-Pattern Mitigations:** A dedicated section lists common mistakes and invalid syntax patterns, training the AI to avoid them proactively.
@@ -297,7 +297,7 @@ This approach turns a modern AI into a powerful pair-programmer, fully versed in
 
 ## 9. Project Philosophy & Future Roadmap
 
-### From a Personal Tool to an Open-Source Project
+### From a private Tool to an Open-Source Project
 
 This project represents the first public version of Rustcript. It began as a practical solution to add dynamic flexibility to my own Rust applications, allowing me to modify logic and configurations without the friction of a full re-compilation for every minor change.
 
@@ -339,7 +339,7 @@ This approach helps us:
 
 1.  **Start a Discussion:** Go to the [**Discussions tab**](https://github.com/Eng-AliKazemi/Rustcript/discussions) and open a new topic. Clearly describe the bug you want to fix or the feature you want to add. For new features, please outline the proposal and its use case. We'll use the discussion to refine the scope and plan before an issue is created.
 
-2.  **Fork & Branch:** Once the idea is discussed and agreed upon, fork the repository and create a new branch for your work. A good branch name is descriptive. **Please always work on a feature branch, not on your fork's `master` branch.** This keeps your main branch clean and makes the PR process smoother.
+2.  **Fork & Branch:** Once the idea is discussed and agreed upon, fork the repository and create a new branch for your work. A good branch name is descriptive. **Please always work on a feature branch, not on your fork's `main` branch.** This keeps your main branch clean and makes the PR process smoother.
     ```bash
     # Create a new branch from the 'development' branch
     git checkout development
@@ -349,7 +349,7 @@ This approach helps us:
 
 3.  **Develop & Test:** Make your changes, adhering to the project's coding style and Rust best practices. **Crucially, ensure you test your changes thoroughly.**
 
-4.  **Submit a Pull Request:** Push your feature branch to your fork and open a pull request against the **`development`** branch of the `Eng-AliKazemi/Rustcript` repository. Pull requests should always come from your feature branch, not your `master` branch. Please provide a clear description of your changes in the PR and link it to the original discussion or issue.
+4.  **Submit a Pull Request:** Push your feature branch to your fork and open a pull request against the **`development`** branch of the `Eng-AliKazemi/Rustcript` repository. Pull requests should always come from your feature branch, not the `main` branch. Please provide a clear description of your changes in the PR and link it to the original discussion or issue.
 
 We look forward to collaborating with you
 
@@ -357,22 +357,23 @@ We look forward to collaborating with you
 
 ## 11. License
 
-This project is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**.
+This project is licensed under the **Apache License 2.0**.
 
-You are free to use, study, share, and modify the software. If you modify any MPL-licensed files, you must make the source code of those specific files available. You may combine this software with proprietary code in a larger project without needing to release the source code of your other components.
+This is a permissive license that allows you to freely use, modify, distribute, and sell the software for any purpose, whether private, commercial, or open-source.
 
-### Additional Attribution Requirement
-In accordance with MPL 2.0, all distributions of this software in **binary and source form** must include the following user-visible attribution in at least one of the following locations:
-- In the README
-- On a startup/splash screen
-- In an "About" or "Acknowledgements" dialog box
-- In the primary documentation or "Help" menu
-- As a footer on a command-line tool's initial output
+You are granted a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright and patent license. However, you must comply with the following conditions:
+
+*   You must include a copy of the license and any original copyright notices.
+*   The project includes a [`NOTICE`](NOTICE) text file, you must include that file in your distribution.
+*   You must state significant changes you have made to the files.
+
+### Attribution
+As a condition of the license, all distributions of this software must include the following attribution in a [`NOTICE`](NOTICE) file and/or in a user-visible location (such as an "About" dialog, documentation, or command-line startup text):
 
 **Required attribution text:**
 > Powered by Rustcript from https://github.com/Eng-AliKazemi/Rustcript.
 
-For the full license text, please see the [`LICENSE`](LICENSE) file.
+For the full license text and required notices, please see the [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE) files.
 
 ---
 
@@ -386,7 +387,7 @@ This project and everyone participating in it is governed by the [Ruscript Code 
 
 The development of Rustcript relies on the exceptional work of the open-source community. We extend our deepest gratitude to the developers behind the incredible Rust crates that made this interpreter possible, including:
 
-For a complete list of third-party dependencies and their versions, please see the `Cargo.toml` file.
+For a complete list of third-party dependencies and their versions, please see the [`NOTICE`](NOTICE) file.
 
 ---
 
