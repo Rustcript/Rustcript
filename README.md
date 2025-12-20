@@ -4,7 +4,10 @@
 
 <div align="center">
   <h1>Rustscript</h1>
-  <p><strong>A companion scripting language for Rust projects</strong></p>
+<p><strong>A companion scripting language for Rust projects</strong></p>
+
+  <a href="https://rustcript.github.io/Rustcript/" target="_blank">Project Official Website</a>
+
 
   ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 </div>
